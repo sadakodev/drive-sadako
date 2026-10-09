@@ -1,0 +1,4 @@
+const c = "https://scripts.sticklight.com", e = "0.0.46", s = `${c}/sandbox-web-client/v${e}/client.js`, t = document.createElement("script");
+t.type = "module";
+t.src = s;
+document.head.appendChild(t);
