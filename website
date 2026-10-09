@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sadako Yamamura — Horror em VHS com jogo 2D</title>
+		<meta
+			name="description"
+			content="Pesadelo interativo inspirado no j-horror: dirija pela estrada 2D até o poço, desvie dos obstáculos e encare o jumpscare final."
+		/>
+		<meta name="author" content="Sticklight" />
+		<meta property="og:title" content="Sadako Yamamura — Horror em VHS com jogo 2D" />
+		<meta property="og:description" content="Dirija até o poço, desvie dos obstáculos e encare o que espera no fim da fita." />
+		<meta property="og:image" content="/og-image.jpeg" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Sadako Yamamura — Horror em VHS com jogo 2D" />
+		<meta name="twitter:description" content="Dirija até o poço, desvie dos obstáculos e encare o que espera no fim da fita." />
+		<meta name="twitter:image" content="/og-image.jpeg" />
+		<script type="module" crossorigin src="/assets/index-BkNRekTv.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-BodOVFNq.css">
+	</head>
+	<body>
+		<div id="root"></div>
+	
+<aside id="sticklight-badge" role="complementary" aria-label="Built with Sticklight">
+  <a id="sticklight-badge-link" href="https://sticklight.com?utm_source=sticklight-badge" target="_blank" rel="noopener">
+    <span class="sticklight-badge-logo"><svg width="145" height="122" viewBox="0 0 145 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.0282 0H0V25.0745L48.0398 121.331H144.119V25.0745L25.0282 0ZM135.579 112.776H56.5798V33.6302H135.579V112.776Z" fill="#282826"/>
+<path d="M112.795 68.8169H100.422C99.1563 68.8169 98.2303 67.6211 98.5441 66.3893L102.624 50.5612C103.138 48.5615 100.592 47.242 99.2644 48.8295L77.8733 74.3987C76.8187 75.6615 77.7138 77.5839 79.3601 77.5839H91.7379C93.0035 77.5839 93.9295 78.7797 93.6157 80.0115L89.536 95.8396C89.0216 97.8393 91.5681 99.1588 92.8954 97.5713L114.286 72.0021C115.341 70.7393 114.446 68.8169 112.8 68.8169H112.795Z" fill="#282826"/>
+</svg></span>
+    <span class="sticklight-badge-text">Built with <strong>Sticklight</strong></span>
+  </a>
+  <button id="sticklight-badge-close" aria-label="Close" type="button"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.7">
+<path d="M12 4L4 12M4 4L12 12" stroke="#282826" stroke-opacity="0.4" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg></button>
+</aside>
+<style>
+  #sticklight-badge {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 2147483647;
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    display: flex;
+    align-items: center;
+    background: rgba(244, 243, 240, 0.75);
+    border: 1px solid #ececea;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    gap: 8px;
+    transition: opacity 0.2s ease;
+  }
+  #sticklight-badge:hover {
+    opacity: 0.95;
+  }
+  #sticklight-badge-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #282826;
+  }
+  .sticklight-badge-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .sticklight-badge-logo svg {
+    width: 19px;
+    height: 19px;
+  }
+  .sticklight-badge-text {
+    color: #282826;
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  .sticklight-badge-text strong {
+    font-weight: 700;
+  }
+  #sticklight-badge-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+  }
+  #sticklight-badge-close svg g {
+    transition: opacity 0.2s ease;
+  }
+  #sticklight-badge-close:hover svg g {
+    opacity: 1;
+  }
+  #sticklight-badge-link:hover .sticklight-badge-text strong {
+    text-decoration: underline;
+  }
+  @media (max-width: 480px) {
+    #sticklight-badge {
+      bottom: 16px;
+      right: 16px;
+      padding: 8px;
+    }
+    .sticklight-badge-text {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .sticklight-badge-logo svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+</style>
+<script>
+  (function() {
+    var closeBtn = document.getElementById('sticklight-badge-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var badge = document.getElementById('sticklight-badge');
+        if (badge) badge.style.display = 'none';
+      });
+    }
+  })();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"76c2a66a7b1848af81566b98160c0a6f","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
